@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description" content="Fundación al cuidado de los animales">
+    <meta name="keywords" content="animales, rescate, fundación, adopción, donación">
+    <!--bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <!--google fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+
+    <title>Manada Animal</title>
+</head>
+
+<body>
+
+    <div class="container-fluid">
+
+        <!---------------------------------------------------------------------------------------------
+        ------------------------------------------header desktop---------------------------------------
+        ---------------------------------------------------------------------------------------------->
+        <header class="row"><!--header-->
+            <!--logo-->
+            <div class="logo col-2"><a href="index.html"><img src="assets/img/logo.svg" alt=""></a></div>
+            <!--menu-->
+            <nav class="menu col-10">
+                <ul>
+                    <li><a href="#">Nosotros</a></li>
+                    <li class="special01"><a href="#">Hazte socio</a></li>
+                    <!--como ayudar dropdown-->
+                    <li class="special02">
+                        <a href="#" data-bs-toggle="dropdown" aria-expanded="false" class="special02_b">Como Ayudar</a>
+                        <div class="dropdown">
+                            <ul class="dropdown-menu">
+                              <li><a class="dropdown-item item_drop01" href="#">Adopta</a></li>
+                              <li><a class="dropdown-item item_drop00" href="donacion.html">Donación</a></li>
+                              <li><a class="dropdown-item" href="#">Apadrina</a></li>
+                              <li><a class="dropdown-item" href="#">Hogar Temporal</a></li>
+                              <li><a class="dropdown-item item_drop02" href="#">Centros de Acopio</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li><a href="#">Manada News</a></li>
+                    <li><a href="#">Contáctanos</a></li>
+                    <!--login dropdown-->
+                    <li>
+                        <a href="#" data-bs-toggle="dropdown" aria-expanded="false" class="session_button">Inicia Sesión</a>
+                        <div class="dropdown">
+                            <div class="dropdown-menu box_login">
+                                <input type="text" placeholder="Usuario">
+                                <input type="text" placeholder="Contraseña">
+                                <button>Ingresar</button>
+                                <p>¿Olvidaste tu contraseña?</p>
+                                <button>Registrate</button>
+                            </div>
+                        </div>  
+                    </li>
+                    <!--search dropdown-->
+                    <li>
+                        <a href="#" data-bs-toggle="dropdown" aria-expanded="false" class="search_button"><i class="fa-sharp fa-solid fa-magnifying-glass"></i></a>
+                        <div class="dropdown">
+                            <div class="dropdown-menu box_search text-center">
+                                <input type="text" placeholder="Usuario">
+                                <button class="btn_head">Buscar</button>
+                            </div>
+                        </div> 
+                    </li>
+                </ul>
+            </nav><!--menu-->
+        </header><!--header-->
+        <!---------------------------------------------------------------------------------------------
+        ------------------------------------------header mobile----------------------------------------
+        ---------------------------------------------------------------------------------------------->
+        <div class="row header_mobile">
+            <!--logo-->
+            <div class="col-3 logo_mobile"><a href="index.html"><img src="assets/img/logo.svg" alt="logo"></a></div>
+            <!--menu sidenav-->
+            <nav class="menu_mobile col-9">
+                <span style="font-size:30px;cursor:pointer" onclick="openNav()"><i class="fa-solid fa-bars"></i></span>
+                <div id="mySidenav" class="sidenav">
+                    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                    <a href="#">Hazte Socio</a>
+                    <a href="donacion.html" class="special_menu_mobile">Donación</a>
+                    <a href="#">Apadrina</a>
+                    <a href="#">Hogar Temporal</a>
+                    <a href="#">Centros de Acopio</a>
+                    <a href="#">Manada News</a>
+                    <a href="#">Contáctanos</a>
+                </div>
+            </nav>
+        </div>
+        <!---------------------------------------------------------------------------------------------
+        ------------------------------------------content----------------------------------------------
+        ---------------------------------------------------------------------------------------------->
+        <div class="content">
+            <!--banner page-->
+            <div class="row">
+                <article class="banner_page col-12">
+                    <h1>Haz una</br> Donación</h1>
+                    <p>Donar es una forma de contribuir a una causa o organización, ya sea a través de la entrega de dinero, bienes, servicios o tiempo. La donación es un acto de generosidad y empatía que permite a las personas y organizaciones hacer una diferencia en el mundo y ayudar a aquellos que necesitan apoyo y ayuda.</p>
+                </article>
+            </div>
+            <!--cards donation-->
+            <section class="row">
+                <!--card donation 01-->
+                <article class="card_donation col-sm-12 col-md-6 col-lg-6 col-xl-3 col-xxl-3">
+                    <a href="#">
+                        <img src="assets/img/donation_01.svg" alt="Donación Voluntaria">
+                    </a>
+                </article>
+                <!--card donation 02-->
+                <article class="card_donation col-sm-12 col-md-6 col-lg-6 col-xl-3 col-xxl-3">
+                    <a href="step_one.html">
+                        <img src="assets/img/donation_02.svg" alt="Todo Ayuda">
+                    </a>
+                </article>
+                <!--card donation 03-->
+                <article class="card_donation col-sm-12 col-md-6 col-lg-6 col-xl-3 col-xxl-3">
+                    <a href="#">
+                        <img src="assets/img/donation_03.svg" alt="Con Yapa">
+                    </a>
+                </article>
+                <!--card donation 04-->
+                <article class="card_donation col-sm-12 col-md-6 col-lg-6 col-xl-3 col-xxl-3">
+                    <a href="#">
+                        <img src="assets/img/donation_04.svg" alt="Con el Corazón">
+                    </a>
+                </article>
+            </section>
+            <!--slide help us-->
+            <section class="row">
+                <article class="help_slide col-12">
+                    <h3>Ayúdanos adoptando</h3>
+                    <div class="help_slide_content">
+                        <!--card help us 01-->
+                        <a href="#">
+                            <div class="help_slide_card">
+                                <img src="assets/img/profile_slide_01.jpg" alt="mascota">
+                                <div class="help_slide_info">
+                                    <h4>Felix</h4>
+                                </div>
+                            </div>
+                        </a>
+                        <!--card help us 02-->
+                        <a href="#">
+                            <div class="help_slide_card">
+                                <img src="assets/img/profile_slide_02.jpg" alt="mascota">
+                                <div class="help_slide_info">
+                                    <h4>Simurdiera</h4>
+                                </div>
+                            </div>
+                        </a>
+                        <!--card help us 03-->
+                        <a href="#">
+                            <div class="help_slide_card">
+                                <img src="assets/img/profile_slide_03.jpg" alt="mascota">
+                                <div class="help_slide_info">
+                                    <h4>Chimuelo</h4>
+                                </div>
+                            </div>
+                        </a>
+                        <!--card help us 04-->
+                        <a href="#">
+                            <div class="help_slide_card">
+                                <img src="assets/img/profile_slide_04.jpg" alt="mascota">
+                                <div class="help_slide_info">
+                                    <h4>Loki</h4>
+                                </div>
+                            </div>
+                        </a>
+                        <!--card help us 05-->
+                        <a href="#">
+                            <div class="help_slide_card">
+                                <img src="assets/img/profile_slide_05.jpg" alt="mascota">
+                                <div class="help_slide_info">
+                                    <h4>Chispita</h4>
+                                </div>
+                            </div>
+                        </a>
+                        <!--card help us 06-->
+                        <a href="#">
+                            <div class="help_slide_card">
+                                <img src="assets/img/profile_slide_06.jpg" alt="mascota">
+                                <div class="help_slide_info">
+                                    <h4>Black</h4>
+                                </div>
+                            </div>
+                        </a>
+                        <!--card help us 07-->
+                        <a href="#">
+                            <div class="help_slide_card">
+                                <img src="assets/img/profile_slide_01.jpg" alt="mascota">
+                                <div class="help_slide_info">
+                                    <h4>Felix</h4>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <button><a href="#">Conoce a todos</a></button>
+                </article>
+            </section>
+
+            <!--slide help us-->
+            <section class="row">
+                <article class="help_slide col-12">
+                    <h3>Ayúdanos Apadrinando</h3>
+                    <div class="help_slide_content">
+                        <!--card help us 01-->
+                        <a href="#">
+                            <div class="help_slide_card">
+                                <img src="assets/img/profile_slide_01.jpg" alt="mascota">
+                                <div class="help_slide_info">
+                                    <h4>Felix</h4>
+                                </div>
+                            </div>
+                        </a>
+                        <!--card help us 02-->
+                        <a href="#">
+                            <div class="help_slide_card">
+                                <img src="assets/img/profile_slide_02.jpg" alt="mascota">
+                                <div class="help_slide_info">
+                                    <h4>Simurdiera</h4>
+                                </div>
+                            </div>
+                        </a>
+                        <!--card help us 03-->
+                        <a href="#">
+                            <div class="help_slide_card">
+                                <img src="assets/img/profile_slide_03.jpg" alt="mascota">
+                                <div class="help_slide_info">
+                                    <h4>Chimuelo</h4>
+                                </div>
+                            </div>
+                        </a>
+                        <!--card help us 04-->
+                        <a href="#">
+                            <div class="help_slide_card">
+                                <img src="assets/img/profile_slide_04.jpg" alt="mascota">
+                                <div class="help_slide_info">
+                                    <h4>Loki</h4>
+                                </div>
+                            </div>
+                        </a>
+                        <!--card help us 05-->
+                        <a href="#">
+                            <div class="help_slide_card">
+                                <img src="assets/img/profile_slide_05.jpg" alt="mascota">
+                                <div class="help_slide_info">
+                                    <h4>Chispita</h4>
+                                </div>
+                            </div>
+                        </a>
+                        <!--card help us 06-->
+                        <a href="#">
+                            <div class="help_slide_card">
+                                <img src="assets/img/profile_slide_06.jpg" alt="mascota">
+                                <div class="help_slide_info">
+                                    <h4>Black</h4>
+                                </div>
+                            </div>
+                        </a>
+                        <!--card help us 07-->
+                        <a href="#">
+                            <div class="help_slide_card">
+                                <img src="assets/img/profile_slide_01.jpg" alt="mascota">
+                                <div class="help_slide_info">
+                                    <h4>Felix</h4>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <button><a href="#">Conoce a todos</a></button>
+                </article>
+            </section>
+        </div><!--end content-->
+        <!---------------------------------------------------------------------------------------------
+        ------------------------------------------footer----------------------------------------------
+        ---------------------------------------------------------------------------------------------->
+        <footer class="row"><!--footer-->
+            <article class="col-sm-12 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
+                <!--logo-->
+                <div class="logo_footer"><img src="assets/img/logo.svg" alt="logo"></div>
+                <!--form newsletter-->
+                <form action="">
+                    <h3>Newsletter</h3>
+                    <p><input type="text" name="nombre" placeholder="Nombre" class="input_text"></p>
+                    <p><input type="text" name="correo" placeholder="Correo" class="input_text"></p>
+                    <p class="accept"><input type="checkbox" class="check_circle">Aceptar los <a href="#" class="terms">Términos y condiciones</a></p>
+                    <p><button>suscribirse</button></p>
+                </form>
+            </article>
+
+            <!--menu footer-->
+            <article class="col-sm-12 col-md-3 col-lg-3 col-xl-3 col-xxl-3">
+                <nav class="menu_footer">
+                    <ul>
+                        <li><a href="#">Preguntas frecuentes</a></li>
+                        <li><a href="#">Casos</a></li>
+                        <li><a href="#">Sistemas de pagos</a></li>
+                        <li><a href="#">Material descargable</a></li>
+                        <li><a href="#">Contenido legal</a></li>
+                        <li><a href="#">Terminos y condiciones</a></li>
+                   </ul>
+                </nav>
+            </article>
+        
+            <article class="col-sm-12 col-md-3 col-lg-3 col-xl-3 col-xxl-3">
+                <!--collaborators-->
+                <div class="colab">
+                    <h4>Colaboradores</h4>
+                    <ul>
+                        <li><a href="#"><img src="" alt=""><i class="fa-solid fa-circle"></i></a></li>
+                        <li><a href="#"><img src="" alt=""><i class="fa-solid fa-circle"></i></a></li>
+                        <li><a href="#"><img src="" alt=""><i class="fa-solid fa-circle"></i></a></li>
+                        <li><a href="#"><img src="" alt=""><i class="fa-solid fa-circle"></i></a></li>
+                        <li><a href="#"><img src="" alt=""><i class="fa-solid fa-circle"></i></a></li>
+                    </ul>
+                </div>
+                <!--social-->
+                <div class="follow">
+                    <h4>Síguenos en</h4>
+                    <ul>
+                        <li><a href="#"><img src="" alt=""><i class="fa-brands fa-facebook"></i></a></li>
+                        <li><a href="#"><img src="" alt=""><i class="fa-brands fa-twitter"></i></a></li>
+                        <li><a href="#"><img src="" alt=""><i class="fa-brands fa-instagram"></i></a></li>
+                        <li><a href="#"><img src="" alt=""><i class="fa-brands fa-youtube"></i></a></li>
+                        <li><a href="#"><img src="" alt=""><i class="fa-solid fa-envelope"></i></a></li>
+                    </ul>
+                </div>
+            </article>
+            <!--copyrights-->
+            <article class="copy col-sm-12 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
+                <p>MANADA ANIMAL © 2023 ALL RIGHTS RESERVED</p>
+            </article>
+            <!--author-->
+            <article class="author col-sm-12 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
+                <p>Made with love by Bricks<a href="#"><img src="assets/img/logo_bricks.svg" alt="logo bricks"></a></p>
+            </article>
+        </footer><!--footer-->
+        <!---------------------------------------------------------------------------------------------
+        -----------------------------------------------------------------------------------------------
+        ---------------------------------------------------------------------------------------------->
+
+    </div><!--end container-->
+
+    <!---------------------------------------------------------------------------------------------
+    ------------------------------------------scripts----------------------------------------------
+    ---------------------------------------------------------------------------------------------->
+
+    <!--Script Sidenav-->
+    <script>
+        function openNav() {
+          document.getElementById("mySidenav").style.width = "250px";
+        }
+        
+        function closeNav() {
+          document.getElementById("mySidenav").style.width = "0";
+        }
+    </script>
+
+    <!--Script Font Awesome-->
+    <script src="https://kit.fontawesome.com/81e9b7fc07.js" crossorigin="anonymous"></script>
+
+    <!--Script Bootstrap-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+</body>
+
+</html>

@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description" content="Fundación al cuidado de los animales">
+    <meta name="keywords" content="animales, rescate, fundación, adopción, donación">
+    <!--bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <!--google fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+
+    <title>Manada Animal</title>
+</head>
+
+<body>
+
+    <div class="container-fluid">
+
+        <!---------------------------------------------------------------------------------------------
+        ------------------------------------------header desktop---------------------------------------
+        ---------------------------------------------------------------------------------------------->
+        <header class="row"><!--header-->
+            <!--logo-->
+            <div class="logo col-2"><a href="index.html"><img src="assets/img/logo.svg" alt=""></a></div>
+            <!--menu-->
+            <nav class="menu col-10">
+                <ul>
+                    <li><a href="#">Nosotros</a></li>
+                    <li class="special01"><a href="#">Hazte socio</a></li>
+                    <!--como ayudar dropdown-->
+                    <li class="special02">
+                        <a href="#" data-bs-toggle="dropdown" aria-expanded="false" class="special02_b">Como Ayudar</a>
+                        <div class="dropdown">
+                            <ul class="dropdown-menu">
+                              <li><a class="dropdown-item item_drop01" href="#">Adopta</a></li>
+                              <li><a class="dropdown-item item_drop00" href="donacion.html">Donación</a></li>
+                              <li><a class="dropdown-item" href="#">Apadrina</a></li>
+                              <li><a class="dropdown-item" href="#">Hogar Temporal</a></li>
+                              <li><a class="dropdown-item item_drop02" href="#">Centros de Acopio</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li><a href="#">Manada News</a></li>
+                    <li><a href="#">Contáctanos</a></li>
+                    <!--login dropdown-->
+                    <li>
+                        <a href="#" data-bs-toggle="dropdown" aria-expanded="false" class="session_button">Inicia Sesión</a>
+                        <div class="dropdown">
+                            <div class="dropdown-menu box_login">
+                                <input type="text" placeholder="Usuario">
+                                <input type="text" placeholder="Contraseña">
+                                <button>Ingresar</button>
+                                <p>¿Olvidaste tu contraseña?</p>
+                                <button>Registrate</button>
+                            </div>
+                        </div>  
+                    </li>
+                    <!--search dropdown-->
+                    <li>
+                        <a href="#" data-bs-toggle="dropdown" aria-expanded="false" class="search_button"><i class="fa-sharp fa-solid fa-magnifying-glass"></i></a>
+                        <div class="dropdown">
+                            <div class="dropdown-menu box_search text-center">
+                                <input type="text" placeholder="Usuario">
+                                <button class="btn_head">Buscar</button>
+                            </div>
+                        </div> 
+                    </li>
+                </ul>
+            </nav><!--menu-->
+        </header><!--header-->
+        <!---------------------------------------------------------------------------------------------
+        ------------------------------------------header mobile----------------------------------------
+        ---------------------------------------------------------------------------------------------->
+        <div class="row header_mobile">
+            <!--logo-->
+            <div class="col-3 logo_mobile"><a href="index.html"><img src="assets/img/logo.svg" alt="logo"></a></div>
+            <!--menu sidenav-->
+            <nav class="menu_mobile col-9">
+                <span style="font-size:30px;cursor:pointer" onclick="openNav()"><i class="fa-solid fa-bars"></i></span>
+                <div id="mySidenav" class="sidenav">
+                    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                    <a href="#">Hazte Socio</a>
+                    <a href="donacion.html" class="special_menu_mobile">Donación</a>
+                    <a href="#">Apadrina</a>
+                    <a href="#">Hogar Temporal</a>
+                    <a href="#">Centros de Acopio</a>
+                    <a href="#">Manada News</a>
+                    <a href="#">Contáctanos</a>
+                </div>
+            </nav>
+        </div>
+        <!---------------------------------------------------------------------------------------------
+        ------------------------------------------content----------------------------------------------
+        ---------------------------------------------------------------------------------------------->
+        <!--content-->
+        <div class="content">
+            <div class="row"><!--row-->
+                <!-------slider desktop------->
+                <article class="slider col-12">
+                    <div id="carouselExampleIndicators" class="carousel slide">
+                        <div class="carousel-indicators">
+                          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                        </div>
+                        <!--slide 01-->
+                        <div class="carousel-inner">
+                          <div class="slide01 carousel-item active">
+                            <h1>Haz una</br> donación</h1>
+                            <p>Los animales abandonados necesitan de tu ayuda. Haz una Donación y dales una nueva oportunidad. Así podrás apoyar su labor y mejorar la calidad de vida de muchos seres inocentes. ¡No lo pienses más, dona ahora!</p>
+                            <button class="see_more"><a href="donacion.html">Ver más</a></button>
+                        </div>
+                        <!--slide 02-->
+                        <div class="slide02 carousel-item">
+                            <h1>Noticia</br> de la semana</h1>
+                            <p>Esta semana se rescataron a 15 perros y gatos en situación de abandono, se les llevó al veterinario para su atención médica, se les esterilizó y vacunó, y se les puso en adopción responsable. También realizó una campaña de concientización sobre...</p>
+                            <button class="see_more">Seguir leyendo</button>
+                        </div>
+                        <!--slide 03-->
+                        <div class="slide03 carousel-item">
+                            <h1>Ayúdanos</h1>
+                            <p>La fundación Manada Animal te invita a ayudar a los animales más necesitados. Con tu aporte, podrás apoyar su labor de rescate, alimentación y esterilización de perros y gatos en situación de abandono. Tu ayuda es vital para mejorar...</p>
+                            <button class="see_more">Saber más</button>
+                        </div>
+                        <!--slide 04-->
+                        <div class="slide04 carousel-item">
+                            <h1>Adopta</h1>
+                                <div class="cards_slider_home">
+                                    <!--card 01-->
+                                    <div class="card_slider">
+                                        <a href="#">
+                                            <img src="assets/img/profile_slide_01.jpg" alt="mascota">
+                                            <div class="info_card_slider">
+                                                <h3>Felix</h3>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <!--card 02-->
+                                    <div class="card_slider">
+                                        <a href="#">
+                                            <img src="assets/img/profile_slide_02.jpg" alt="mascota">
+                                            <div class="info_card_slider">
+                                                <h3>Simurdiera</h3>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <!--card 03-->
+                                    <div class="card_slider">
+                                        <a href="#">
+                                            <img src="assets/img/profile_slide_03.jpg" alt="mascota">
+                                            <div class="info_card_slider">
+                                                <h3>Chimuelo</h3>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <!--card 04-->
+                                    <div class="card_slider">
+                                        <a href="#">
+                                            <img src="assets/img/profile_slide_04.jpg" alt="mascota">
+                                            <div class="info_card_slider">
+                                                <h3>Loki</h3>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                            <p>¿Estás buscando un compañero fiel y amoroso? Adopta un animal y dale una segunda oportunidad. Hay muchos perros y gatos que esperan por una familia que los quiera y los cuide. Al adoptar, no solo salvas una vida, sino que también ganas un amigo. ¡No lo dudes, adopta hoy!</p>
+                            <button class="see_more">Saber más</button>
+                        </div>
+                        <!--buttons slider-->
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                </article>
+
+                <!-------slider mobile------->
+                <div class="scroll-container slide_mobile">
+                    <!--slide mobile 01-->
+                    <a href="donacion.html">
+                        <div class="card_slide_mobile">
+                            <img src="assets/img/slide_mobile_01.jpg" alt="Donación">
+                            <div class="info_slide_mobile">
+                                <h1>Haz una</br> donación</h1>
+                            </div>
+                        </div>
+                    </a>
+                    <!--slide mobile 02-->
+                    <a href="#">
+                        <div class="card_slide_mobile">
+                            <img src="assets/img/slide_mobile_02.jpg" alt="Noticias">
+                            <div class="info_slide_mobile">
+                                <h1>Noticia</br>de la</br>semana</h1>
+                            </div>
+                        </div>
+                    </a>
+                    <!--slide mobile 03-->
+                    <a href="#">
+                        <div class="card_slide_mobile">
+                            <img src="assets/img/slide_mobile_03.jpg" alt="Ayúdanos">
+                            <div class="info_slide_mobile">
+                                <h1>Ayúdanos</h1>
+                            </div>
+                        </div>
+                    </a>
+                    <!--slide mobile 04-->
+                    <a href="#">
+                        <div class="card_slide_mobile">
+                            <img src="assets/img/slide_mobile_04.jpg" alt="Adopta">
+                            <div class="info_slide_mobile">
+                                <h1>Adopta</h1>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div><!--row-->
+
+        <!--cards home-->       
+        <section class="row help_us">
+            <h2>Ayúdanos</h2>
+            <!--card home 01-->
+            <article class="col-sm-12 col-md-6 col-lg-3 col-xl-3 col-xxl-3">
+                <a href="#">
+                    <img src="assets/img/card_home01.jpg" alt="Hazte Socio">
+                </a>
+                <h3>Hazte socio</h3>
+            </article>
+            <!--card home 02-->
+            <article class="col-sm-12 col-md-6 col-lg-3 col-xl-3 col-xxl-3">
+                <a href="donacion.html">
+                    <img src="assets/img/card_home02.jpg" alt="Donación">
+                </a>
+                <h3>Donación</h3>
+            </article>
+            <!--card home 03-->
+            <article class="col-sm-12 col-md-6 col-lg-3 col-xl-3 col-xxl-3">
+                <a href="#">
+                    <img src="assets/img/card_home03.jpg" alt="Apadrina">
+                </a>
+                <h3>Apadrina</h3>
+            </article>
+            <!--card home 04-->
+            <article class="col-sm-12 col-md-6 col-lg-3 col-xl-3 col-xxl-3">
+                <a href="#">
+                    <img src="assets/img/card_home04.jpg" alt="Adopción">
+                </a>
+                <h3>Adopción</h3>
+            </article>
+        </section><!--row-->
+
+        <!--intro message-->
+        <section class="row"><!--row-->
+            <article class="intro col-12"><!--intro home-->
+                <h2>Nuestro Trabajo</h2>
+                <p>La Fundación “Manada Animal” es una organización sin fines de lucro ubicada en la ciudad de Valparaíso, dedicada a mejorar la vida de los animales. Esta fundación trabaja incansablemente para rescatar a los animales abandonados, maltratados o en situación de riesgo, brindándoles un refugio seguro donde puedan ser alimentados y cuidados adecuadamente. Además, “Manada Animal” se enfoca en controlar la población de animales callejeros mediante programas de esterilización, lo que ayuda a reducir la sobrepoblación y mejorar su calidad de vida.</p>
+                <p><button>Saber más</button></p>
+            </article>
+        </section><!--row-->
+        
+        <!--banners-->
+       <section class="row"><!--row-->
+            <!--banner 01-->
+            <article class="banner_home banner01 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12"><!--banner 01-->
+                <a href="#">
+                    <img src="assets/img/banner_home_01.jpg" alt="Hogar Temporal">
+                    <div class="info_banner">
+                        <h2>Se Hogar</br>Temporal</h2>
+                        <p>Otorga amor de hogar a quien lo necesita.</p>
+                    </div>
+                </a>
+            </article>
+            <!--banner 02-->
+            <article class="col-sm-12 col-md-12 col-lg-6 col-xl-6 col-xxl-6 banner02"><!--banner 02-->
+                <div class="banner_home">
+                    <a href="#">
+                        <img src="assets/img/banner_home_02.jpg" alt="Dudas">
+                        <div class="info_banner">
+                            <h2>Dudas</h2>
+                            <p>Aquí las respondemos.</p>
+                        </div>
+                    </a>
+                </div>
+            </article>
+            <!--banner 03-->
+            <article class="col-sm-12 col-md-12 col-lg-6 col-xl-6 col-xxl-6 banner03"><!--banner 03-->
+                <div class="banner_home">
+                    <a href="#">
+                        <img src="assets/img/banner_home_03.jpg" alt="Casos">
+                        <div class="info_banner">
+                            <h2>Casos</h2>
+                            <p>Conoce algunos de nuestros casos.</p>
+                        </div>
+                    </a>
+                </div>
+            </article>
+        </section><!--row-->
+
+        <!--form home-->
+       <section class="row">
+            <article class="form_home col-12">
+                <form>
+                    <h3>Contáctanos</h3>
+                    <p><input type="text" name="nombre" placeholder="Nombre"></p>
+                    <p><input type="text" name="correo" placeholder="Correo"></p>
+                    <p><input type="text" name="asunto" placeholder="Asunto del mensaje" class="asunto"></p>
+                    <p><input type="checkbox" class="check_circle">Aceptar los <a href="#" class="terms">Términos y condiciones</a></p>
+                    <p><button>Enviar</button></p>
+                </form>
+            </article>
+        </section>
+       </div><!--end content-->
+        <!---------------------------------------------------------------------------------------------
+        ------------------------------------------footer----------------------------------------------
+        ---------------------------------------------------------------------------------------------->
+        <footer class="row"><!--footer-->
+            <article class="col-sm-12 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
+                <!--logo-->
+                <div class="logo_footer"><img src="assets/img/logo.svg" alt="logo"></div>
+                <!--form newsletter-->
+                <form action="">
+                    <h3>Newsletter</h3>
+                    <p><input type="text" name="nombre" placeholder="Nombre" class="input_text"></p>
+                    <p><input type="text" name="correo" placeholder="Correo" class="input_text"></p>
+                    <p class="accept"><input type="checkbox" class="check_circle">Aceptar los <a href="#" class="terms">Términos y condiciones</a></p>
+                    <p><button>suscribirse</button></p>
+                </form>
+            </article>
+
+            <!--menu footer-->
+            <article class="col-sm-12 col-md-3 col-lg-3 col-xl-3 col-xxl-3">
+                <nav class="menu_footer">
+                    <ul>
+                        <li><a href="#">Preguntas frecuentes</a></li>
+                        <li><a href="#">Casos</a></li>
+                        <li><a href="#">Sistemas de pagos</a></li>
+                        <li><a href="#">Material descargable</a></li>
+                        <li><a href="#">Contenido legal</a></li>
+                        <li><a href="#">Terminos y condiciones</a></li>
+                   </ul>
+                </nav>
+            </article>
+        
+            <article class="col-sm-12 col-md-3 col-lg-3 col-xl-3 col-xxl-3">
+                <!--collaborators-->
+                <div class="colab">
+                    <h4>Colaboradores</h4>
+                    <ul>
+                        <li><a href="#"><img src="" alt=""><i class="fa-solid fa-circle"></i></a></li>
+                        <li><a href="#"><img src="" alt=""><i class="fa-solid fa-circle"></i></a></li>
+                        <li><a href="#"><img src="" alt=""><i class="fa-solid fa-circle"></i></a></li>
+                        <li><a href="#"><img src="" alt=""><i class="fa-solid fa-circle"></i></a></li>
+                        <li><a href="#"><img src="" alt=""><i class="fa-solid fa-circle"></i></a></li>
+                    </ul>
+                </div>
+                <!--social-->
+                <div class="follow">
+                    <h4>Síguenos en</h4>
+                    <ul>
+                        <li><a href="#"><img src="" alt=""><i class="fa-brands fa-facebook"></i></a></li>
+                        <li><a href="#"><img src="" alt=""><i class="fa-brands fa-twitter"></i></a></li>
+                        <li><a href="#"><img src="" alt=""><i class="fa-brands fa-instagram"></i></a></li>
+                        <li><a href="#"><img src="" alt=""><i class="fa-brands fa-youtube"></i></a></li>
+                        <li><a href="#"><img src="" alt=""><i class="fa-solid fa-envelope"></i></a></li>
+                    </ul>
+                </div>
+            </article>
+            <!--copyrights-->
+            <article class="copy col-sm-12 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
+                <p>MANADA ANIMAL © 2023 ALL RIGHTS RESERVED</p>
+            </article>
+            <!--author-->
+            <article class="author col-sm-12 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
+                <p>Made with love by Bricks<a href="#"><img src="assets/img/logo_bricks.svg" alt="logo bricks"></a></p>
+            </article>
+        </footer><!--footer-->
+        <!---------------------------------------------------------------------------------------------
+        -----------------------------------------------------------------------------------------------
+        ---------------------------------------------------------------------------------------------->
+
+    </div><!--end container-->
+
+    <!---------------------------------------------------------------------------------------------
+    ------------------------------------------scripts----------------------------------------------
+    ---------------------------------------------------------------------------------------------->
+
+    <!--Script Sidenav-->
+    <script>
+        function openNav() {
+          document.getElementById("mySidenav").style.width = "250px";
+        }
+        
+        function closeNav() {
+          document.getElementById("mySidenav").style.width = "0";
+        }
+    </script>
+
+    <!--Script Font Awesome-->
+    <script src="https://kit.fontawesome.com/81e9b7fc07.js" crossorigin="anonymous"></script>
+
+    <!--Script Bootstrap-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+</body>
+
+</html>
